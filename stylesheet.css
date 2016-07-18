@@ -118,13 +118,15 @@ max-height: 100%;
 
 .title_low_icon {
 
-margin: 0 auto;
-position: absolute;
-width: 1em;
+position: relative;
+width: 0.7em;
 height: 1em;
 background-image: url(img/icon_1.png);
 background-repeat: no-repeat;
 background-size: 100% 100%;
+align-self: center;
+top: 1.5em;
+
 
 }
 
@@ -132,37 +134,63 @@ background-size: 100% 100%;
 .title_low_text {
 
 margin: 0 auto;
-padding-bottom: 10%;
 width: 100%;
 display: flex;
 flex-direction: column;
 text-align: center;
 background-color: rgba(177, 177, 177, 0.2);
+align-content: center;
 
 }
 
 
 
-.title_low_text h5 {
+.title_low_text .p_text {
 
+width: 100%;
+color: rgb(1, 3, 6);
+display: flex;
 font-family: sans-serif;
-color: rgba(42, 42, 42, 0.9);
 margin: 0 auto;
-margin-top: 12%;
-
-
+letter-spacing: 0.5px;
+text-align: center;
+font-size: 0.5em;
 
 }
+
+
 
 .title_low_text p {
 
+
   font-family: sans-serif;
   color: rgba(42, 42, 42, 0.9);
-  font-size: 11px;
-  width: 80%;
+  font-size: 0.4em;
+  width: 70%;
   margin: 0 auto;
-  margin-top: 5%;
+/*  margin-top: 2%;*/
+/*  margin-bottom: 9%;*/
   height: 30%;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 3%;
+
+}
+
+.title_low_text h6 {
+
+font-family: sans-serif;
+font-size: 0.2em;
+margin: 0 auto;
+margin-top: 8%;
+
+
+}
+
+.text {
+
+top: 5em;
+height: 10em;
 
 }
 
@@ -287,18 +315,54 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 height: inherit;
+justify-content: flex-end;
+
+}
+
+.mid_part_2_up_ {
+
+display: flex;
+flex-direction: column;
+width: 33%;
+justify-content: flex-end;
+height: 18em;
 
 }
 
 .mid_part_2_up_txt {
 
 position: relative;
-width: 33%;
-height: 18em;
+width: 80%;
+height: inherit;
 display: flex;
 flex-flow: column;
 align-content: center;
 justify-content: flex-end;
+
+}
+
+.mid_part_2_up_txt h4 {
+
+  font-family: sans-serif;
+  font-size: 0.2em;
+  margin: 0 auto;
+  margin-top: 8%
+
+}
+
+.mid_part_2_up_txt p {
+
+  font-family: sans-serif;
+  color: rgba(42, 42, 42, 0.9);
+  font-size: 0.4em;
+  width: 70%;
+  margin: 0 auto;
+  /* margin-top: 2%; */
+  /* margin-bottom: 9%; */
+  height: 30%;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 3%
 
 }
 
@@ -331,7 +395,6 @@ background-size: 100% 100%;
 display: flex;
 width: 68%;
 height: 18em;
-align-content: center;
 
 }
 
@@ -359,16 +422,15 @@ height: 100%;
 
 .alpha_img {
 
-background-image: url(img/logo_2.png);
-background-size: 100% 100%;
-background-position: center;
-background-clip: cover;
-width: 4em;
-height: 4em;
-position: absolute;
-top: 35%;
-right: 9em;
-
+  background-image: url(img/logo_2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  top: 38%;
+  right: 10%;
+  left: 60%;
 
 }
 
@@ -637,8 +699,7 @@ background-size: contain;
 
 width: 33%;
 display: flex;
-flex-flow: row;
-align-items: stretch;
+flex-direction: row;
 
 }
 
@@ -656,12 +717,11 @@ background-size: 100% 100%;
 
 .mid_part_5_mid_right_img_2 {
 
-display: flex;
-background-image: url(img/bike_13.jpg);
-background-repeat: no-repeat;
-width: 5em;
-background-size: 100% 100%;
-position: relative;
+  background-image: url(img/bike_13.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  position: relative;
+  background-size: 100% 100%;
 
 }
 
@@ -669,23 +729,58 @@ position: relative;
 .mid_part_5_right {
 
   align-items: stretch;
-  width: 33%;
+  width: 34%;
   height: inherit;
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 
 }
 
-.mid_part_5_low {
+.mid_part_5_right_right_up_img {
+
+width: 100%;
+height: 50%;
+background-image: url(img/bike_16.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+
+}
+
+.mid_part_5_right_low {
 
   position: relative;
   display: flex;
   width: 100%;
-  height: inherit;
+  height: 50%;
   align-self: center;
+
+}
+
+.mid_part_5_right_right_low_img_1 {
+
+  background-image: url(img/bike_14.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-size: 100% 100%;
+
+}
+
+.mid_part_5_right_right_low_img_2 {
+
+  background-image: url(img/bike_15.jpg);
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-size: 100% 100%;
 
 
 }
+
+
+
 
 /*css for footer_*/
 
